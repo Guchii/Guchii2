@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
+import { FaCloudDownloadAlt, FaFolder } from "react-icons/fa";
 
 const Home = () => {
   const links = ["home", "about", "projects", "contact"];
@@ -28,6 +30,7 @@ const Home = () => {
             height="72.001"
             viewBox="0 0 596.5 72.001"
             xmlns="http://www.w3.org/2000/svg"
+            className="hero__title"
           >
             <g
               id="svgGroup"
@@ -61,6 +64,41 @@ const Home = () => {
               <div className="right__icon">
                 <BsGithub />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="about">
+        <div className="wrapper">
+          <div className="card">
+            <div className="card__left">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident recusandae consectetur ipsa illo, corrupti eos
+                voluptate aliquid, ipsam, nisi a enim debitis nulla mollitia
+                earum fuga in blanditiis quisquam. Itaque numquam id ullam nisi
+                voluptates quos suscipit soluta minima nobis illum vel odit
+                vitae ipsa ipsum quae consequatur, consequuntur natus?
+              </p>
+              <div className="left__buttons">
+                <Link href="/projects" className="buttons__btn">
+                  <a className="btn__content">
+                    <FaFolder /> Projects
+                  </a>
+                </Link>
+                <Link href="/Resume" className="buttons__btn">
+                  <a className="btn__content">
+                    <FaCloudDownloadAlt /> Resume
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="card__right">
+              <img
+                src="https://images.unsplash.com/photo-1648393738819-fb6ef37285f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0NHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300&q=80"
+                layout
+                alt="sampleImage"
+              />
             </div>
           </div>
         </div>

@@ -22,9 +22,13 @@
 
 .hero {
   // background-color: crimson;
-  svg {
+  .wrapper {
+    padding-top: 0;
+  }
+  .hero__title {
     width: 100%;
     height: 200px;
+    // border-bottom: 2px solid rgba(255, 255, 255, 0.637);
   }
 
   .hero__belowTitle {
@@ -59,6 +63,60 @@
           fill: $background;
         }
       }
+    }
+  }
+}
+
+.about {
+  height: 400px;
+  .card {
+    padding: 24px;
+    display: flex;
+    background: $yellow;
+    color: $background;
+    border-radius: 12px;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: hidden;
+  }
+  .card__left {
+    flex: 1 1 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card__right {
+    overflow: hidden;
+    border-radius: 12px;
+    img {
+      transition: 0.2s all;
+      &:hover {
+        transform: scale(110%);
+      }
+    }
+  }
+}
+
+.left__buttons {
+  display: flex;
+  gap: 12px;
+  a {
+    background-color: $background;
+    color: $yellow;
+    padding: 12px;
+    transition: 0.2s all;
+    font-size: 32px;
+    border-radius: 4px;
+    &:hover {
+      transform: rotate(10deg) scale(90%);
+    }
+
+    svg {
+      font-size: 25px;
     }
   }
 }
